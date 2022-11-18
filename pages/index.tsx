@@ -7,6 +7,8 @@ import {Tab} from '@headlessui/react';
 import { fetchCategories } from '../utils/fetchCategories'
 import { fetchProducts } from '../utils/fetchProducts'
 import Product from '../components/Product'
+import Cart from '../components/Cart'
+import Footer from "../components/Footer";
 
 interface Props {
   categories: Category[];
@@ -21,16 +23,17 @@ const Home= ({categories, products}: Props) => {
     ))
   }
   return (
-    <div className="">
+    <>
       <Head>
         <title>The Candle History</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main className="relative h-[200vh] bg-gradient-to-b from-[#E7ECEE] to-white">
+      <Cart/>
+      <main className="relative  bg-gradient-to-b from-[#E7ECEE] to-white">
         <Landing/>
       </main>
-      <section className="relative z-30 -mt-[100vh] min-h-screen bg-[#1B1B1B]">
+      <section className="relative z-30  min-h-screen bg-[#1B1B1B]">
         <div className="space-y-10 py-16">
           <h1 className="text-center text-4xl font-medium tracking-wide text-white md:text-5xl">
             New Candles
@@ -61,7 +64,8 @@ const Home= ({categories, products}: Props) => {
           </Tab.Group>
         </div>
       </section>
-    </div>
+      <Footer />
+    </>
   )
 }
 
