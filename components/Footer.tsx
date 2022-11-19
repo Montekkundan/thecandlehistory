@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { SlSocialTwitter } from "react-icons/sl";
 
@@ -215,15 +216,13 @@ function Footer() {
             Copyright © 2022 TheCandleHistory. All rights reserved.
           </div>
           <div className="text-sm text-gray-400 pt-1">
-            <a
+            <Link
               className="text-gray-400 hover:text-gray-700  hover:underline transition duration-150 ease-in-out"
-              href="#">Terms</a
-            >
+              href="/legal/terms">Terms</Link>
             <span className="text-gray-400"> | </span>
-            <a
+            <Link
               className="text-gray-400 hover:text-gray-700  hover:underline transition duration-150 ease-in-out"
-              href="#">Privacy Policy</a
-            >
+              href="/legal/privacy">Privacy Policy</Link>
           </div>
         </div>
       </div>
