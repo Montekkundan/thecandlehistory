@@ -1,4 +1,5 @@
 import Link from "next/link";
+import router from "next/router";
 import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { SlSocialTwitter } from "react-icons/sl";
 
@@ -9,7 +10,7 @@ function Footer() {
         <div className="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
           <div className="col-span-12 lg:col-span-4">
             <div className="mb-2">
-              <a className="inline-block font-bold text-xl" href="#">The Candle History</a>
+              <span className="inline-block font-bold text-xl cursor-pointer" onClick={() => router.push("/")} >The Candle History</span>
             </div>
             <ul className="flex mb-4 md:order-1 -ml-2  md:mb-0">
               <li>

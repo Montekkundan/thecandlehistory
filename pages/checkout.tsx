@@ -61,7 +61,7 @@ function checkout() {
     setLoading(false);
   }
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen ">
       <Head>
         <title>Bag | The Candle History</title>
         <link rel="icon" href="/favicon.ico" />
