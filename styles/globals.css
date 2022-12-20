@@ -32,4 +32,21 @@
       .tabPanel {
         @apply grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3;
       }
+      .v_container {
+        @apply grid h-screen absolute top-0 w-screen ;
+        grid-template-columns: 2fr 1fr;
+      }
+      .title {
+        @apply w-[450px] relative h-[110px] overflow-hidden
+      }
+
+      .img-container {
+        @apply w-screen h-screen top-0 absolute
+      }
+      .left-side {
+        @apply flex flex-col justify-end p-16 gap-[5rem]
+      }
+      .right-side {
+        @apply border-white border-solid border-t-2 border-b-2 h-40 rounded-full m-auto relative w-40
+      }
 }
